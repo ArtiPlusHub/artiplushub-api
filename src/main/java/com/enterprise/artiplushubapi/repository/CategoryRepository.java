@@ -1,5 +1,8 @@
 package com.enterprise.artiplushubapi.repository;
 
-public interface CategoryRepository {
-    void hello();
+import com.enterprise.artiplushubapi.model.entity.Categories;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CategoryRepository extends JpaRepository<Categories, Integer> {
+
 }
